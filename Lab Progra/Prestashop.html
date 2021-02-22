@@ -88,6 +88,96 @@
         </li>
     </ul>
 
+    <h2>Pasos para la instalacion de PrestaShop:</h2>
+    <ul>
+
+        <h2>Paso 1: Descargar la última versión de PrestaShop</h2>
+
+        <li align="justify">Lo primero que debes hacer es, por supuesto, descargar la última versión estable de PrestaShop 1.7 para instalar en local. Como verás, la palabra clave es «estable», con esto nos aseguramos de que 
+        no se presenten fallos propios de versiones beta o de pruebas.</li>
+
+        <h2>Paso 2: Descargar el software XAMPP</h2>
+
+        <li align="justify">PrestaShop, como todos los softwares, están escritos en lenguajes de programación. En este caso PHP, uno de los lenguajes más populares, además de utilizar la popular base de datos MySQL.
+
+        Esto puede sonarte un poco técnico si no estás en el área de la tecnología, pero es necesario que 
+        comprendas cómo funciona para poder adaptar tu ordenador o entorno local.</li>
+        <li align="justify">Puedes descargar XAMPP en su sitio oficial.</li>
+
+        <h2>Paso 3:Instalar XAMPP</h2>
+
+        <li align="justify">Después de descargarlo, procederemos a instalarlo.
+      
+        <li align="justify">Si salta una ventana en tu ordenador solicitando permisos de instalación de un 
+        usuario administrador, debes aceptarlo si tienes los permisos, de lo contrario deberás solicitar la contraseña al administrador del equipo para que te permita continuar la instalación.</li>
+
+        <li align="justify">En cada uno de los cuadros de instalación debes dar clic en el botón de continuar o next luego de realizar la configuración necesaria en cada paso.</li>
+
+        <li align="justify">Por último, el XAMPP ha quedado debidamente instalado y ya podemos ejecutarlo para que los archivos del PrestaShop puedan ser leídos y procesados, así que asegúrate de tener marcada la casilla antes de finalizar, tal como se ve en la imagen 2.10.</li>
+
+        <h2>Paso 4:Descomprimir PrestaShop</h2>
+
+        <li align="justify">Ya está el servidor web instalado y «corriendo», por lo tanto, es el turno de empezar a configurar el entorno donde se instalará el PrestaShop. Debes copiar el archivo comprimido que descargaste de PrestaShop y pegarlo en la carpeta «raíz» del Apache.
+     La ruta de esta carpeta raíz suele estar en «C:\xampp\htdocs» a menos que hayas cambiado la ruta de instalación del xampp (imagen 2.4).
+        A continuación descomprime el archivo en esa ruta, ten en cuenta que si das clic en «Extraer aquí», estarás descomprimiendo el archivo en la raíz. Te recomiendo dar clic en la opción «Extraer en prestashop_1.7.x.x» según la versión que hayas descargado. Tal como se muestra en la imagen</li>
+      
+        <li align="justify">Dirígete dentro de la carpeta prestashop_1.7.x.x y encontrarás otro archivo comprimido llamado prestashop.zip, 
+        nuevamente da clic derecho – «Extraer en prestashop».
+        Una vez se haya finalizado la extracción puedes cambiar el nombre de la carpeta y nombrarla como tu tienda, en mi caso pondré «programador_prestashop», 
+        como se ve en la imagen</li>
+
+        <li align="justify">Esta carpeta debes cortarla y pegarla un nivel más arriba, es decir que su ruta definitiva sea: C:\xampp\htdocs\programador_prestashop. En este punto ya puedes eliminar 
+        la carpeta prestashop_1.7.x.x y también el archivo comprimido que copiaste.</li>
+
+        <h2>Paso 5: Arrancar XAMPP</h2>
+
+        <li align="justify">Cuando terminamos de instalar el XAMPP, el programa arrancará y se abrirá una ventana donde podrás controlar el estado de los servicios de 
+        la base de datos MySQL (donde se almacenan los datos) y el Apache que es el intérprete de PHP el cual es el lenguaje de programación en el cual está escrito PrestaShop.</li>
+
+        <h2>Paso 6:Crear una base de datos</h2>
+
+        <li align="justify">A continuación crearemos una base de datos donde se guardará la información de nuestra tienda, es importante realizar este paso antes de intentar instalar el PrestaShop.</li>
+        
+        <h2>Paso 7:Configuracion PHP:</h2>
+
+        <li align="justify">Volvemos al control panel de XAMPP y damos clic en el botón «Config» y luego en la opción 
+        «PHP (php.ini)», esto abrirá un bloc de notas con la configuración de PHP que debemos cambiar.</li>
+
+        <li align="justify"><b>Busca en el archivo la palabra «intl» y asegúrate de quitarle el símbolo de punto y coma «;» que está al inicio de la línea como se ve en la imagen</b></li>
+
+        <li align="justify"><b>También busca la expresión «realpath_cache_size» y cambia su valor a «5M» y borra el punto y coma «;» 
+        que está al inicio de la línea, tal como se ve en la imagen</b></li>
+
+        <h2>Paso 8:  Instalar el CMS PrestaShop</h2>
+
+        <li align="justify">Como ya se ha agregado la carpeta PrestaShop en la raíz del apache, 
+        recuerda que en mi caso se llama «programador_prestashop» ubicada en «C:\xampp\htdocs\», entonces podré acceder directamente a ella a través del navegador.</li>
+    
+        <li align="justify">Aceptar los términos de la licencia de PrestaShop</li>
+
+
+
+        <li align="justify">Se crea la base de datos para la instalación en local de PrestaShop
+        En el siguiente paso el instalador empezará a crear la base de datos y a copiar algunos archivos en tu 
+        tienda para que pueda funcionar y por último mostrará una confirmación de instalación exitosa</li>
+
+        <h2>Paso 9:Eliminar la carpeta Install y renombrar la carpeta Admin</h2>
+
+        <li align="justify">Por último solo tendrás que eliminar la carpeta «install» del directorio de tu tienda, 
+        también tendrás que renombrar la carpeta «admin» para ingresar al BackOffice.</li>
+
+
+        <li align="justify">Si das clic en el botón «Administrar tu tienda» que se encuentra un poco más abajo, podrás acceder automáticamente al 
+        BackOffice, ya que el instalador se encargará de renombrar la carpeta «admin»</li>
+
+        <h2>Paso 10:Empezar a crear tu tienda en local</h2>
+
+        <li align="justify">Una vez la instalación se ha completado puedes ingresar a tu panel administrativo 
+        para empezar a gestionar tu catálogo, instalar módulos y realizar las configuraciones necesarias para que tu tienda funcione en local y posteriormente puedas subirla a la nube.</li>
+
+        
+    </ul>
+
 
 </div>
 </body>
