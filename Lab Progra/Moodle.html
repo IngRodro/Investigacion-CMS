@@ -129,6 +129,120 @@
             <li>Personas interesadas en aprender a gestionar entornos virtuales de enseñanza</li>
         </ol>
 
+        <h2>Pasos para la instalacion de Joomla:</h2>
+
+        <ul>
+            <h2>Paso 1: Descargar Moodle</h2>
+
+            <li align="justify">Empezamos por la descarga de la aplicación Joomla en www.joomla.org.
+            </li>
+            <div align="center">
+                <img class="img-instalacion" src="img/Instalacion Wordpress/Instalacion 1.png" alt="">
+            </div>
+
+            <h2>Paso 2: Descargar Xampp</h2>
+
+            <li align="justify">Lo siguiente es descargar Xampp para poder montar nuestro servidor web local.</li>
+
+            <div align="center">
+                <img class="img-instalacion" src="img/Instalacion Wordpress/Instalacion 2.png" alt="">
+            </div>
+
+            <h2>Paso 3: Crear un servidor local para poder instalar Moodle</h2>
+
+            <li align="justify">Ahora que ya tenemos la aplicación de Xampp, la instalaremos en nuestro ordenador.
+                En el ejemplo vamos a instalar Xampp en Windows 10. El instalable descargado tiene que ser un
+                fichero parecido a éste:
+                <b>xampp-windowS-x64-8.0-.2-0-VS16-installer.exe.</b>
+                Lo ejecutamos para iniciar el asistente de instalación de Xampp.
+            </li>
+
+
+            <h2>Instalar el servidor local de Xampp</h2>
+
+            <li align="justify">Hecho esto, a continuación, se iniciará el asistente de
+                instalación que podemos apreciar en la siguiente captura:</li>
+
+            <div align="center">
+                <img class="img-instalacion" src="img/Instalacion Wordpress/Instalacion 3.png" alt="">
+            </div>
+
+
+            <li align="justify">Aquí simplemente pulsamos el botón “Next >” para continuar con
+                la selección de componentes de Xampp que se muestran a continuación:</li>
+
+            <div align="center">
+                <img class="img-instalacion" src="img/Instalacion Wordpress/Instalacion 4.png" alt="">
+            </div>
+
+            <li align="justify">En el siguiente paso, toca elegir el directorio de la instalación:</li>
+
+            <div align="center">
+                <img class="img-instalacion" src="img/Instalacion Wordpress/Instalacion 5.png" alt="">
+            </div>
+
+
+            <li align="justify">En el siguiente paso, se mostrara esta pantalla</li>
+
+            <div align="center">
+                <img class="img-instalacion" src="img/Instalacion Wordpress/Instalacion 7.png" alt="">
+            </div>
+
+            <li align="justify">En definitiva, nos debemos cerciorar simplemente de que está desmarcada la opción de
+                “Learn more about Bitnami for Xampp” y pulsa “Next >”.
+                Con esto ya llegamos al paso final para instalar nuestro servidor local para Joomla:</li>
+
+            <div align="center">
+                <img class="img-instalacion" src="img/Instalacion Wordpress/Instalacion 8.png" alt="">
+            </div>
+
+
+            <h2>Paso 4: Instalar Moodle en el servidor local Xampp</h2>
+
+            <li align="justify"><b>Crear la base de datos MySQL en el servidor local Xampp</b></li>
+
+            <li align="justify">Como Moodle necesita de una base de datos, lo primero que tenemos que hacer es
+                crear la base de datos para WordPress en nuestro recién instalado servidor MySQL. Eso lo haremos con la
+                aplicación de administración
+                <b>phpMyAdmin</b> .La podemos arrancar haciendo “clic” sobre el botón “Admin” de la
+                fila de MySQL en el administrador de Xampp.
+                Nos ha de visualizar en tu navegador web una pantalla como ésta:
+            </li>
+
+            <div align="center">
+                <img class="img-instalacion" src="img/Instalacion Wordpress/Instalacion 11.png" alt="">
+            </div>
+
+
+            <li align="justify">Hacemos clic en la pestaña de “Bases de datos” y la herramienta nos permitirá crear una
+                nueva base de datos </li>
+
+            <div align="center">
+                <img class="img-instalacion" src="img/Instalacion Wordpress/Instalacion 12.png" alt="">
+            </div>
+            <li align="justify">Por hacer las cosas sencillas, podemos llamar la base de datos “moodle ”, por ejemplo.
+            </li>
+
+            <h2>Subir Moodle a nuestro servidor</h2>
+            <li align="justify">Ahora toca “subir Moodle al servidor”.
+                Lo que haremos en primer lugar es localizar la carpeta <b>htdocs</b> dentro de la carpeta Xampp.
+                Esta carpeta es el equivalente en nuestra instalación a la carpeta <b>public_html</b> que casi todos los
+                hostings usan como raíz para la instalación de las webs
+            </li>
+
+            <div align="center">
+                <img class="img-instalacion" src="img/Instalacion Wordpress/Instalacion 13.png" alt="">
+            </div>
+
+
+            <li align="justify">Siguiendo con el ejemplo anterior de una instalación en “C:/Desarrollo/Xampp”, sería
+                “C:/Desarrollo/Xampp/htdocs”:Aquí colocaremos el fichero .zip de WordPress que descargamos de
+                www.joomla.org.
+                Esto debería crear dentro de htdocs una carpeta llamada “moodle” y al dirigirnos a la direccion
+                http://localhost/joomla/ en nuestro navegador
+                Nos debería salir una pantalla como ésta:
+            </li>
+
 
     </div>
 </body>
