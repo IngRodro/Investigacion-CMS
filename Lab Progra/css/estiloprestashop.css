@@ -20,7 +20,7 @@ body{
     border-top: 6px solid rgb(93, 5, 235);
 }
 
-.container img{
+.img-info{
     width: 250px;
     float: right;
     margin-left: 20px;
@@ -60,4 +60,10 @@ body{
 .container strong{
     font-style: normal;
     font-size: 25px;
+}
+
+.img-instalacion{
+    width: 1050px;
+    float: none;
+    margin: 25px;
 }
